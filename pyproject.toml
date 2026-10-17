@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gunsight"
+version = "0.1.0"
+description = "Scale-invariant GUI target locator powered by SIFT and Homography"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python-headless",
+    "numpy",
+    "click",
+]
+
+[project.scripts]
+gunsight = "gunsight:cli"
